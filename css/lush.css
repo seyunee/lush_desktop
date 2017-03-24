@@ -1,0 +1,356 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css');
+@import url('https://cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css');
+
+@font-face {
+ font-family: 'NanumSquare';
+ src:  url(../lib/NanumSquareR.woff) format('woff'),url(../lib/NanumSquareR.ttf) format('truetype');
+}
+
+body{font-family: dotum, gulim, sans-serif;}
+#wrap{width:100%;}
+
+/* header */
+header{background:#fff}
+header .gnb{width:1280px;margin:0 auto;font-family:'NanumSquare'}
+header .gnb .logo{display:inline-block;background:url('../img/logo_black.png')no-repeat;margin:20px 0;margin-right:20px}
+header .gnb .logo a{display:block;width:236px;height:42px;text-indent:-9999px;}
+header .gnb nav{display:inline-block;width:800px;position: relative;}
+header .gnb .depth1{}
+header .gnb .depth1>li{position:relative;display:inline-block;margin:0 20px}
+header .gnb .depth1>li a{color:#000;font-size:20px;}
+header .gnb .depth1 .depth2{position:absolute;background:#fff;z-index:500;display:none;margin-top:28px;vertical-align:top;left:-20px;width:220px;box-shadow: 2px 2px 10px rgba(0,0,0,.4)}
+header .gnb .depth1 .depth2.on{display:block}
+header .gnb .depth1 .depth2 li{height:40px;padding:0 18px;}
+header .gnb .depth1 .depth2 li a{color:#000;font-size:14px;height:40px;line-height:40px;}
+header .gnb .depth1 .depth2 li:hover{background:#333;}
+header .gnb .depth1 .depth2 li:hover a{color:#fff;}
+header .gnb .util{display:inline-block;width:200px}
+header .gnb .util .search{display:inline-block;width:25px;height:25px;text-indent:-9999px;background:url('../img/btn_srch.png')no-repeat;}
+header .gnb .util .login{border-right:#000 1px solid;padding-right:10px}
+header .gnb .util a{color:#000;font-size:15px;line-height:25px;margin:0 5px}
+header .gnb .util .user{font-size:20px;font-weight: bold;color:#247d36}
+/* //header */
+
+
+/*section*/
+section .mainBanner{padding: 0 0; position: relative; width: 100%;  height: 400px; margin: 0 0 30px 0;}
+section .mainBanner .bxslider{margin:auto;overflow: hidden;height:400px;}
+section .mainBanner .bxslider li {background-repeat: no-repeat; background-position: center 0;}
+section .mainBanner .bxslider li img{position: relative;left: 50%;margin-left: -1025px;}
+.container{width:1280px;margin:auto}
+.container .subBanner{margin:20px auto;padding:0 20px;font-family:'NanumSquare'}
+.container .subBanner dl{display:inline-block;overflow: hidden;position: relative;width:397px;height:305px;margin-right:20px }
+.container .subBanner dl:last-child{margin-right:0}
+.container .subBanner dl dt{position: absolute;}
+.container .subBanner dl dd span{position: absolute;color:#fff;font-size: 15px;top:20px;left:20px}
+.container .subBanner dl dd .title{position: absolute;color:#fff;font-size: 36px;top:100px;left:20px;text-shadow: 1px 1px 5px rgba(0,0,0,.5)}
+.container .subBanner dl dd .more{position: absolute;color:#fff;font-size: 15px;text-decoration: underline;bottom:20px;left:20px}
+.container .subBanner dl dd .more:hover{color:#000;font-weight: bold;text-decoration: none;background-color: #fff}
+
+
+.container .mdPick{width:1240px;margin:auto;padding:0 20px;font-family:'NanumSquare'}
+.container .mdPick .tit_md{display:block;margin:30px 0 10px;text-indent:-9999px;background:url('../img/tit_md.jpg')no-repeat;width:1240px;height:28px}
+.container .mdPick li{display:inline-block;overflow: hidden;width:229px;margin-right:20px;text-align: center;}
+.container .mdPick li:last-child{margin-right:0}
+.container .mdPick li.type1{height:305px;position: relative;}
+.container .mdPick li.type1 dt{position: absolute;}
+.container .mdPick li.type1 dd span{position: absolute;color:#fff;font-size: 15px;top:20px;left:20px}
+.container .mdPick li.type1 dd .title{position: absolute;color:#fff;font-size: 30px;font-weight: bold;text-align: left;top:80px;left:20px;text-shadow: 1px 1px 5px rgba(0,0,0,.5)}
+.container .mdPick li.type1 dd .more{position: absolute;color:#fff;font-size: 15px;text-decoration: underline;bottom:20px;left:20px}
+.container .mdPick li.type1 dd .more:hover{color:#000;text-decoration: none;background-color: #fff}
+
+.container .ad {width:1240px;margin:20px auto;padding:0 20px;position: relative;font-family:'NanumSquare'}
+.container .ad dt img{width:1240px;height: 400px}
+.container .ad dd span{position: absolute;color:#fff;font-size: 20px;top:70px;left:50%;margin-left: -85px}
+.container .ad dd .title{position: absolute;color:#fff;font-size: 60px;font-weight: bold;left:50%;top:150px;margin-left: -225px;text-shadow: 1px 1px 5px rgba(0,0,0,.5)}
+.container .ad dd .more{position: absolute;color:#fff;font-size: 15px;bottom:60px;left:50%;margin-left: -40px;}
+.container .ad dd .more:hover{color:#000;text-decoration: none;background-color: #fff}
+
+.container .customer{width:1240px;overflow: hidden;margin:auto;padding:0 20px;font-family:'NanumSquare'}
+/*.container .customer .tit_customer{display:block;margin:20px 0 10px;font-size: 35px;font-weight: bold;width:1240px;height:45px;border-bottom: 1px solid #ddd}*/
+.container .customer dl{display:block;float: left;width:378px;height: 150px;margin: 20px;border-right: 1px solid #ddd;font-weight:bold}
+
+.container .customer dl:last-child{margin-right:0;border-right:none}
+.container .customer dl dt{display:block;height:40px;margin-bottom: 20px;font-size: 25px;line-height: 40px;font-weight: bold;letter-spacing: 2px;}
+.container .customer dl dt a{font-size: 25px;line-height: 40px;font-weight: bold;letter-spacing: 2px;}
+.container .customer dl dt::after{display: block; content: "";width: 25px; border-bottom: 2px solid #777;margin-top: 3px}
+.container .customer .news dd li{list-style: square;padding: 3px;}
+.container .customer .news dd li a{font-size: 15px;line-height: 20px;color:#555}
+.container .customer .news dd li a:hover{text-decoration: underline;}
+.container .customer .membership dd {height:25px;font-size: 15px;line-height: 25px;color:#555}
+.container .customer .cs dd li{height:25px;list-style: square;font-size: 15px;line-height: 25px}
+.container .customer .cs dd li:first-child a{color:#247d36}
+.container .customer .cs dd li a{font-size: 15px;line-height: 25px}
+/* //section*/
+
+/* list-page */
+.titleVisual{height:373px;width:100%;position:relative;text-align:center}
+.titleVisual h2{font-family: 'Indie Flower', cursive;position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-90px;font-size:90px;color:#fff;letter-spacing:10px;text-shadow: 2px 2px 10px #333}
+section>.category{width:1280px;margin:auto;padding:0 10px;height:85px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;box-sizing:border-box}
+section>.category li{float:left;height:40px;line-height:40px;margin:20px 10px;padding:0 10px}
+section>.category li:hover, section>.category li.on{background:#000}
+section>.category li a{line-height:40px;font-size:16px}
+section>.category li.on a, section>.category li:hover a{color:#fff}
+.list{width:1240px;margin:auto;padding:0 10px;overflow:hidden;margin-bottom: 20px}
+.list .product{position:relative;width:220px;height:320px;float:left;text-align:center;margin: 14px;}
+.list .product dt{padding:20px}
+.list .product dt img{width:180px;height:180px}
+.list .product dd.icons{position:absolute;display:none;width:220px;height:320px;top:0;left:0;background:rgba(0,0,0,.4);padding:30px;box-sizing:border-box}
+.list .product dd.icons span.icon{display:block;width:70px;height:70px;text-indent:-9999px;float:left;margin:5px}
+.list .product dd.icons span.limited{background:url('../list_img/icon_limited.png') no-repeat}
+.list .product dd.icons span.new{background:url('../list_img/icon_new.png') no-repeat}
+.list .product dd.icons span.bogo{background:url('../list_img/icon_bogo.png') no-repeat}
+.list .product dd.icons span.vegan{background:url('../list_img/icon_vegan.png') no-repeat}
+.list .product dd.icons a.more{background:rgba(255,255,255,1);font-size:15px;font-weight:bold;line-height:40px;display:block;width:160px;height:40px;float:left;position:absolute;bottom:30px;}
+
+.list .product:hover dd.icons{display:block}
+.list .product dd.desc{width:220px;height:100px}
+.list .product dd.desc strong{display:block;text-align:center;font-size:20px;padding-bottom:10px}
+.list .product dd.desc .weight{text-align:center;font-size:12px;border-right:1px solid #ccc;padding-right:10px}
+.list .product dd.desc .price{text-align:center;font-size:15px;font-weight:bold;padding-left:10px}
+
+/*best_list*/
+.bestContainer{width:1240px;margin:auto;padding:0 10px;overflow:hidden;margin-bottom: 20px}
+.bestContainer .bestSlider{width:1240px;height:350px}
+.bestContainer .bestSlider h2{font-size:40px;padding:20px 10px;font-family:'NanumSquare'}
+.bestContainer .bestSlider ul{}
+.bestContainer .bestSlider li {float:left;width:210px}
+.bestContainer .bestSlider li.best1{background: url('../best_img/ico_bs_01.png')no-repeat left top}
+.bestContainer .bestSlider li.best2{background: url('../best_img/ico_bs_02.png')no-repeat left top}
+.bestContainer .bestSlider li.best3{background: url('../best_img/ico_bs_03.png')no-repeat left top}
+.bestContainer .bestSlider li.best4{background: url('../best_img/ico_bs_04.png')no-repeat left top}
+.bestContainer .bestSlider li.best5{background: url('../best_img/ico_bs_05.png')no-repeat left top}
+.bestContainer .bestSlider li.best6{background: url('../best_img/ico_bs_06.png')no-repeat left top}
+.bestContainer .bestSlider li.best7{background: url('../best_img/ico_bs_07.png')no-repeat left top}
+.bestContainer .bestSlider li.best8{background: url('../best_img/ico_bs_08.png')no-repeat left top}
+.bestContainer .bestSlider li.best9{background: url('../best_img/ico_bs_09.png')no-repeat left top}
+.bestContainer .bestSlider li.best10{background: url('../best_img/ico_bs_10.png')no-repeat left top}
+.bestContainer .bestSlider li dt{text-align: center; }
+.bestContainer .bestSlider li dd .product{display:block;text-align: center; font-size: 13px; }
+.bestContainer .bestSlider li dd .price{display:block;text-align: center; font-size: 12px; color:#777}
+.bestContainer .bestSlider > a{display:block;width:17px;height:29px;margin:30px;position:relative;top:50px}
+.bestContainer .bestSlider > a > a{display:block;text-indent: -9999px;width:17px;height:29px;}
+.bestContainer .bestSlider a.prev{background: url('../best_img/btn_prev.png')no-repeat ;float:left;}
+.bestContainer .bestSlider a.next{background: url('../best_img/btn_next.png')no-repeat ;float:right;}
+
+.bestContainer .bestItem{height:500px;border-top:1px solid #ccc;padding-top:20px}
+.bestContainer .bestItem .left{position: relative;float:left;width:500px;height: 500px}
+.bestContainer .bestItem .left h3{position: absolute;top:0;left:0;display:block;width:46px;height:44px;text-indent:-9999px;float: left}
+.bestContainer .best1 .left h3{background:url('../best_img/rank_01.png')no-repeat left top;}
+.bestContainer .best2 .left h3{background:url('../best_img/rank_02.png')no-repeat left top;}
+.bestContainer .best3 .left h3{background:url('../best_img/rank_03.png')no-repeat left top;}
+.bestContainer .bestItem .left img{display: inline-block;width:500px;height:500px;position: absolute;top:0;left:0;}
+.bestContainer .bestItem .desc{float:left;width:700px}
+.bestContainer .bestItem .desc .category{font-size:18px;color: #555}
+.bestContainer .bestItem .desc .kor{font-family: 'Nanum Brush Script';font-size:50px;font-weight: bold;color: #000;}
+.bestContainer .bestItem .desc .eng{font-family: 'Indie Flower', cursive;font-size:30px;font-weight: bold;color:#999;margin-top: 5px}
+.bestContainer .bestItem .buy{float:left;width:700px;padding-top:15px}
+.bestContainer .bestItem .buy select{float: left;width:100px;height:48px;font-size: 13px;text-align: center;margin-right: 5px}
+.bestContainer .bestItem .buy .inner_area{float: left;width: 150px; height: 48px;margin-right: 5px}
+.bestContainer .bestItem .buy .inner_area .area{float: left;width: 48px;height: 46px;vertical-align: top;border:1px solid #d0d4d9;background: #eee;text-align: center}
+.bestContainer .bestItem .buy .inner_area .area .btn{margin: 16px;font-size:25px;line-height: 45px;}
+.bestContainer .bestItem .buy .inner_area .area .minus{width:17px;height:17px}
+.bestContainer .bestItem .buy .inner_area .area .plus{width:17px;height:17px}
+.bestContainer .bestItem .buy .inner_area .area input{width: 48px;height: 46px;border:none;text-align: center;}
+.bestContainer .bestItem .buy .price {float: left;width: 120px;height: 46px;line-height: 46px;border: 1px solid #d0d4d9;text-align: center; color: #666;margin-right: 5px;font-size: 13px;}
+.bestContainer .bestItem .buy button{width: 150px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-weight: bold;color: #fff}
+
+.bestContainer .bestItem .other{float:left;width:700px;height:220px;margin-top: 50px}
+.bestContainer .bestItem .other>span{float:left;width:700px;font-size:15px;color: #000;font-weight: bold}
+.bestContainer .bestItem .other dl{float:left;width:174px;height:200px;text-align: center}
+.bestContainer .bestItem .other dl dt{width:174px;display:inline-block}
+.bestContainer .bestItem .other dl dt img{width:174px;}
+.bestContainer .bestItem .other dl dd .product{width:174px;display:inline-block;font-size: 12px; }
+.bestContainer .bestItem .other dl dd .price{width:174px;display:inline-block;font-size: 12px; color:#777}
+
+/*veiw*/
+.container h3.tit{font-family: 'Indie Flower', cursive;margin-top: 15px;margin-bottom: 15px;margin-right: 50px;border-bottom: 1px solid #bbb;font-size: 25px;font-weight: bold}
+.container .leftSide{width:800px;float: left;margin: 10px}
+.container .leftSide .ingredients .listIngredients{margin: 5px;font-size: 13px;}
+.container .leftSide .ingredients strong.green{font-size: 13px;background:url('../detail_img/grn.png')no-repeat left top;display: block;float:left;color:#247d36;padding-left: 18px;padding-right: 10px}
+.container .leftSide .ingredients strong.black{font-size: 13px;background:url('../detail_img/blk.png')no-repeat left top;display: block;float:left;color:#000;padding-left: 18px;padding-right: 10px}
+.container .leftSide .ingredients strong.notice{display: block;float:left;margin-top:3px;font-size: 13px;}
+
+.container .detail{width:430px;float:left;margin: 10px;margin-left: 20px}
+.container .detail h2{float:left;font-family: 'Indie Flower', cursive;font-size:40px;font-weight: bold;color:#333;margin-top: 5px;width:430px}
+.container .detail h2 span.weight{font-family:Arial,sans-serif;font-size:15px;color:#777;margin-top: 5px;width:50px;}
+.container .detail strong.category{float:left;font-size:18px;color:#777;width:430px}
+.container .detail .productImg{margin: 0 23px}
+.container .detail .buy select{float: left;width:100px;height:48px;font-size: 13px;text-align: center;margin-right: 5px}
+.container .detail .buy .inner_area{float: left;width: 150px; height: 48px;margin-right: 5px}
+.container .detail .buy .inner_area .area{float: left;width: 48px;height: 46px;vertical-align: top;border:1px solid #d0d4d9;background: #eee;text-align: center}
+.container .detail .buy .inner_area .area .btn{margin: 16px;font-size:25px;line-height: 45px;}
+.container .detail .buy .inner_area .area .minus{width:17px;height:17px}
+.container .detail .buy .inner_area .area .plus{width:17px;height:17px}
+.container .detail .buy .inner_area .area input{width: 48px;height: 46px;border:none;text-align: center;}
+.container .detail .buy .price {float: left;width: 260px;height: 46px;line-height: 46px;border: 1px solid #d0d4d9;text-align: center; color: #333;margin-left: 5px;font-size: 22px;letter-spacing: 1px}
+.container .detail .buy button{width: 422px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-top: 5px}
+.container .content{margin-bottom: 80px}
+.container .content .textarea{text-align: center;padding-top:20px ;margin-bottom: 40px}
+.container .content .use{margin-bottom: 40px}
+.container .content .use .useList li{list-style: circle;font-size: 14px;padding: 3px;}
+.container .content .infomation .info {margin-bottom: 15px}
+.container .content .infomation .info .infoTitle{color:#333;margin-top: 10px;font-size:15px;font-weight: bold; }
+.container .content .infomation .info .infoContents{text-indent: 10px;margin-top: 10px;font-size:13px}
+.container .content .infomation .info .infoContents li{list-style: circle;padding: 3px;}
+.container .content .infomation .info .infoContents p{padding: 3px;}
+.container .content .infomation .info .infoContents strong{margin-left: 15px;color: #247d36}
+
+/*join*/
+section.join {width:1280px;margin:auto;overflow:hidden;margin-bottom: 20px;box-sizing: border-box;}
+section.join h2{font-family: 'Indie Flower', cursive;font-size: 35px;line-height: 85px;width:1280px;margin:auto;padding:0 10px;height:85px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;box-sizing:border-box}
+section.join .termBox{width:1000px;margin: 20px auto;border: 1px solid #ddd ;border-radius: 5px}
+section.join .termBox h3{float:left;height:50px;line-height: 50px;font-size:18px;padding-left: 20px;padding-right: 20px}
+section.join .termBox span.chk{background:url('../img/before_chk.png')no-repeat;float:right;height:30px;width: 30px;display:block;margin:10px}
+section.join .termBox span.chk.on{background:url('../img/after_chk.png')no-repeat;}
+section.join .termBox .lushTerm{overflow: auto;height: 300px; margin-top: 50px;padding: 20px;font-size: 12px;line-height: 1.5;color: #767676;letter-spacing: 0;border-top:1px solid #ddd }
+section.join .termBox .lushTerm strong{line-height: 23px}
+section.join .termBox .lushTerm p{text-indent:5px}
+section.join .termBox .privacyTerms{overflow: auto;height: 70px; margin-top: 50px;padding: 20px;font-size: 12px;line-height: 1.5;color: #767676;letter-spacing: 0;border-top:1px solid #ddd }
+section.join .termBox .privacyTerms table{width:100%;text-align: center;border-collapse: collapse;}
+section.join .termBox .privacyTerms table tr{}
+section.join .termBox .privacyTerms table tr th{height:30px;line-height: 30px;background: #efefef;border-bottom: 1px solid #ddd;border-right:  1px solid #ddd;}
+section.join .termBox .privacyTerms table tr td{height:30px;line-height: 30px;border-right:  1px solid #ddd;}
+section.join .termBox .privacyTerms table tr th:last-child ,section.join .termBox .privacyTerms table tr td:last-child{border-right: none}
+section.join .terms>strong{display: block;width:1000px;margin: 10px auto;font-size:13px}
+section.join .userInfo{width:1000px;margin: 20px auto;}
+section.join .userInfo table{margin: 30px auto}
+section.join .userInfo table tr{height: 40px;line-height: 40px}
+section.join .userInfo table tr th{text-align: right;font-size:16px;padding: 10px;}
+section.join .userInfo table tr td{text-align: left;padding: 10px;}
+section.join .userInfo table tr td a#ajax_request{display:block;line-height: 30px;padding:0 20px;;color:#fff;height: 30px;border:1px solid #d0d4d9;background: #247d36;font-weight: bold}
+section.join .userInfo table tr td input{height: 30px}
+section.join .userInfo table tr.chk_result{height: 20px;line-height: 20px;display: none;}
+
+section.join .userInfo .continue{float: right;width: 250px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-top: 5px;margin-right: 100px;margin-bottom: 30px;}
+
+/*login*/
+section.login {width:1280px;margin:auto;overflow:hidden;margin-bottom: 20px;box-sizing: border-box;}
+section.login h2{font-family: 'Indie Flower', cursive;font-size: 35px;line-height: 85px;width:1280px;margin:auto;padding:0 10px;height:85px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;box-sizing:border-box}
+section.login .loginInfo{width:1000px;margin: 20px auto;}
+section.login .loginInfo table{margin: 30px auto}
+section.login .loginInfo table tr{height: 30px;line-height: 30px}
+section.login .loginInfo table tr th{text-align: left;font-size:20px;padding: 5px;}
+section.login .loginInfo table tr td{ padding: 5px;}
+section.login .loginInfo table tr td input{height: 30px}
+section.login .loginInfo table tr td a{text-align: left;padding: 5px;font-size: 16px;text-decoration: underline;}
+section.login .loginInfo .continue{float: right;width: 250px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-right: 100px;margin-bottom: 30px;}
+
+/*forgotten*/
+section.forgotten {width:1280px;margin:auto;overflow:hidden;margin-bottom: 20px;box-sizing: border-box;}
+section.forgotten h2{font-family: 'Indie Flower', cursive;font-size: 35px;line-height: 85px;width:1280px;margin:auto;padding:0 10px;height:85px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;box-sizing:border-box}
+section.forgotten .forgottenInfo{width:1000px;margin: 20px auto;}
+section.forgotten .forgottenInfo h3{font-size: 20px;}
+section.forgotten .forgottenInfo table{margin: 30px auto}
+section.forgotten .forgottenInfo table tr{height: 30px;line-height: 30px}
+section.forgotten .forgottenInfo table tr th{text-align: left;font-size:20px;padding: 5px;}
+section.forgotten .forgottenInfo table tr td{ padding: 5px;}
+section.forgotten .forgottenInfo table tr td input{height: 30px}
+section.forgotten .forgottenInfo table tr td a{text-align: left;padding: 5px;font-size: 16px;text-decoration: underline;}
+section.forgotten .forgottenInfo .continue{float: right;width: 250px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-right: 100px;margin-bottom: 30px;}
+
+/*faq*/
+section.faq {width:1280px;margin:auto;overflow:hidden;margin-bottom: 20px;box-sizing: border-box;}
+section.faq h2{font-family: 'Indie Flower', cursive;font-size: 30px;line-height: 85px;width:1280px;margin:auto;padding:0 10px;height:85px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;box-sizing:border-box}
+section.faq .container .menu{width: 200px;float: left;margin: 20px;}
+section.faq .container .menu li{width: 130px;height: 130px;border-radius: 50%;margin: 10px;background-color: #ccc;text-align: center}
+section.faq .container .menu li.on, section.faq .container .menu li:hover{background-color: #000;}
+section.faq .container .menu li a{display: block;width: 100px;height: 100px;line-height: 20px;padding:15px;font-size: 18px;font-weight: 600}
+section.faq .container .menu li.on a, section.faq .container .menu li:hover a{color:#fff}
+section.faq .container .menu li span{display: block;width:50px;height: 50px;text-indent: -9999px;margin-top: 5px;margin-bottom: 10px;margin-left: 23px}
+section.faq .container .menu li span.membership{background: url('../img/membership.png') no-repeat center center;background-size: cover}
+section.faq .container .menu li span.order{background: url('../img/order.png') no-repeat center center;background-size: cover}
+section.faq .container .menu li span.shipping{background: url('../img/shipping.png') no-repeat center center;background-size: cover}
+section.faq .container .menu li span.return{background: url('../img/return.png') no-repeat center center;background-size: cover}
+section.faq .container .menu li.on span.membership, section.faq .container .menu li:hover span.membership{background: url('../img/membership_w.png') no-repeat center center;background-size: cover}
+section.faq .container .menu li.on span.order, section.faq .container .menu li:hover span.order{background: url('../img/order_w.png') no-repeat center center;background-size: cover}
+section.faq .container .menu li.on span.shipping, section.faq .container .menu li:hover span.shipping{background: url('../img/shipping_w.png') no-repeat center center;background-size: cover}
+section.faq .container .menu li.on span.return, section.faq .container .menu li:hover span.return{background: url('../img/return_w.png') no-repeat center center;background-size: cover}
+section.faq .container h3{float: left;margin: 10px; font-size: 40px;}
+section.faq .container .questions{width:1000px;float: left;margin-top: 10px}
+section.faq .container .questions dl .ques{background: url('../img/arr_dw.png')no-repeat right;margin:0 10px;text-indent: 10px;height: 50px;font-weight: bold;font-size: 18px;line-height: 50px;cursor: pointer;border-top: 1px solid #222 ;border-bottom: 1px solid #222 ;margin-top:-1px}
+section.faq .container .questions dl .ques.on{background: url('../img/arr_up.png')no-repeat right;}
+section.faq .container .questions dl .ques span.ico_q{font-size: 20px;line-height: 50px;padding-right: 20px;padding-left: 10px;font-weight: bold}
+section.faq .container .questions dl .answer{margin:0 10px;font-size: 15px;padding:20px;display: none;}
+
+/*news*/
+section.news {width:1280px;margin:auto;overflow:hidden;margin-bottom: 20px;box-sizing: border-box;}
+section.news h2{font-family: 'Indie Flower', cursive;font-size: 35px;line-height: 85px;width:1280px;margin:auto;padding:0 10px;height:85px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;box-sizing:border-box}
+section.news .container table{width:1000px;margin: 20px auto;border-collapse: collapse;}
+section.news .container table colgroup col:nth-child(1){width:10%}
+section.news .container table colgroup col:nth-child(2){width:auto}
+section.news .container table colgroup col:nth-child(3){width:20%}
+section.news .container table colgroup col:nth-child(4){width:15%}
+section.news .container table th{height:60px;font-size: 18px;border-bottom: 1px solid #000}
+section.news .container table td{height:40px;font-size: 15px;border-bottom: 1px solid #555;text-align: center}
+section.news .container table td.title{text-align: left}
+section.news .container table.write_form input{height: 30px;width: 100%}
+section.news .container table.write_form textarea{height: 200px;width: 100%}
+section.news .container table.write_form th{width: 20%}
+section.news .container table.write_form td{width: 80%;padding: 5px;text-align: justify}
+
+section.news .container table.write_view tr.write_data{height: 50px;width: 100%}
+section.news .container table.write_view tr.write_data th{height: 50px;width: 50px;padding: 10px;font-size: 15px;border-bottom: 1px solid #ddd}
+section.news .container table.write_view tr.write_data td{height: 50px;padding: 10px;font-size: 15px;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd}
+section.news .container table.write_view tr.write_data td:nth-child(2){width:500px}
+section.news .container table.write_view tr.write_data td:nth-child(4){width:90px}
+section.news .container table.write_view tr.write_data td:nth-child(6){width:20px}
+section.news .container table.write_view tr.write_data td:last-child{border-right: none}
+
+section.news .container table.write_view tr.write_content td{padding: 20px;text-align: justify;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;font-size: 14px}
+
+section.news .container a.btn_write{float: right;width: 120px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-bottom: 30px;margin-right: 140px;font-weight: bold}
+section.news .btns{text-align: center}
+section.news .btns input.btn_cpl{width: 140px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-bottom: 30px;}
+section.news .btns input.btn_cancel{width: 120px; height: 48px;border:1px solid #d0d4d9;background: #777;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-bottom: 30px;cursor: pointer}
+
+
+
+/*review*/
+section.review {width:1280px;margin:auto;overflow:hidden;margin-bottom: 20px;box-sizing: border-box;}
+section.review h2{font-family: 'Indie Flower', cursive;font-size: 35px;line-height: 85px;width:1280px;margin:auto;padding:0 10px;height:85px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;box-sizing:border-box}
+section.review .container table{width:1000px;margin: 20px auto;border-collapse: collapse;}
+section.review .container table.list colgroup col:nth-child(1){width:10%}
+section.review .container table.list colgroup col:nth-child(2){width:auto}
+section.review .container table.list colgroup col:nth-child(3){width:15%}
+section.review .container table.list colgroup col:nth-child(4){width:15%}
+section.review .container table.list colgroup col:nth-child(5){width:15%}
+section.review .container table.list th{height:60px;font-size: 18px;border-bottom: 1px solid #000}
+section.review .container table.list td{height:40px;font-size: 15px;border-bottom: 1px solid #555;text-align: center}
+section.review .container table.list td.title{text-align: left}
+
+section.review .container table.write_form input{height: 30px;width: 100%}
+section.review .container table.write_form textarea{height: 200px;width: 100%}
+section.review .container table.write_form th{width: 20%}
+section.review .container table.write_form td{width: 80%;padding: 5px;text-align: justify}
+
+section.review .container table.write_view tr.write_data{height: 50px;width: 100%}
+section.review .container table.write_view tr.write_data th{width: 50px;padding: 10px;font-size: 15px}
+section.review .container table.write_view tr.write_data td{padding: 10px;font-size: 15px;border-right: 1px solid #ddd}
+section.review .container table.write_view tr.write_data td:nth-child(2){width:400px}
+section.review .container table.write_view tr.write_data td:nth-child(4){width:100px;font-weight: bold;color:#247d36}
+section.review .container table.write_view tr.write_data td:nth-child(6){width:90px}
+section.review .container table.write_view tr.write_data td:nth-child(8){width:20px}
+section.review .container table.write_view tr.write_data td:last-child{border-right: none}
+
+section.review .container table.write_view tr.write_content td{padding: 20px;text-align: justify;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;font-size: 14px}
+
+section.review a.btn_write{float: right;width: 120px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-bottom: 30px;margin-right: 100px;font-weight: bold}
+section.review .btns{text-align: center}
+section.review .btns input.btn_cpl{width: 140px; height: 48px;border:1px solid #d0d4d9;background: #247d36;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-bottom: 30px;}
+section.review .btns input.btn_del{width: 140px; height: 48px;border:1px solid #d0d4d9;background: #cc0000;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-bottom: 30px;}
+section.review .btns input.btn_cancel{width: 120px; height: 48px;border:1px solid #d0d4d9;background: #777;text-align: center;line-height: 46px;font-size: 20px;letter-spacing: 1px;color: #fff;margin-bottom: 30px;}
+
+footer{width: 100%;overflow:hidden;background:#000;height:400px}
+.bot_info{background:#f2f2f2;padding:15px}
+.bot_info img{width:1280px;margin:auto;display:block}
+.bot_detail{width:1280px;margin:auto;display:block}
+.bot_detail .bot_logo{display:inline-block;background:url('../img/logo_bot.png')no-repeat;width:168px;height:31px;text-indent:-9999px;margin:20px 0;margin-right:20px}
+.bot_detail ul{display:inline-block;}
+.bot_detail ul li{display:inline-block;margin:0 20px;}
+.bot_detail ul li a{color:#f2f2f2;font-size:11px;}
+.bot_content{border-top:#f2f2f2 1px solid;padding:20px 50px 0 210px;}
+.bot_content p{color:#f2f2f2;font-size:11px;}
+.bot_content p:last-child{margin-top:15px}

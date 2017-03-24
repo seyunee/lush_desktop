@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<title>LUSH KOREA-List</title>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js "></script>
+	<script src="../lib/common.js"></script>
+	<link href="../css/lush.css" rel="stylesheet" type="text/css">
+    <script src="../lib/jquery.bxslider/jquery.bxslider.js"></script>
+    <link href="../lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+  <script>
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+      pager:false,
+      slideWidth:210,
+      moveSlides:1,
+      maxSlides:5,
+      speed:500,
+      auto:true,
+      autoHover:true,
+      nextSelector: '.next',
+      prevSelector: '.prev'
+
+    })
+  })
+  </script>
+
+ </head>
+<body>
+    <!--    header-->
+    <? include "../include/sub_header.html" ?>
+    <!--   // header-->
+	<section>
+		<div class="titleVisual">
+			<img class="bg" src="../best_img/main_visual.jpg" alt="bath">
+			<h2>BEST</h2>
+		</div>
+		<div class="category">
+			<ul>
+				<li class="on"><a href="best_list.html">Weekly Best</a></li>
+				<li><a href="best_list.html">Monthly Best</a></li>
+				<li><a href="best_list.html">Steady Seller</a></li>
+			</ul>
+		</div>
+
+    <div class="bestContainer">
+  		<div class="bestSlider">
+  			<h2>WEEKLY BEST</h2>
+        <a href="#" class="prev"></a>
+        <a href="#" class="next"></a>
+        <ul class="slider">
+          <li class="best1">
+              <a href="#">
+                <dl>
+                  <dt><img src="../best_img/best1.png" alt="best1"></dt>
+                  <dd>
+                    <strong class="product">코스메틱 워리어</strong>
+                    <span class="price">￦28,000원</span>
+                  </dd>
+                </dl>
+              </a>
+          </li>
+          <li class="best2">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best2.png" alt="best2"></dt>
+                <dd>
+                  <strong class="product">마스크 오브 매그너민티</strong>
+                  <span class="price">￦20,700원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="best3">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best3.png" alt="best3"></dt>
+                <dd>
+                  <strong class="product">카타스트로피 코스메틱</strong>
+                  <span class="price">￦28,000원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="best4">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best4.png" alt="best4"></dt>
+                <dd>
+                  <strong class="product">더 컴포터</strong>
+                  <span class="price">￦26,300원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="best5">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best5.png" alt="best5"></dt>
+                <dd>
+                  <strong class="product">뉴</strong>
+                  <span class="price">￦18,500원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="best6">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best6.png" alt="best6"></dt>
+                <dd>
+                  <strong class="product">섹스 밤</strong>
+                  <span class="price">￦8,500원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="best7">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best7.png" alt="best7"></dt>
+                <dd>
+                  <strong class="product">빅</strong>
+                  <span class="price">￦33,400원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="best8">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best8.png" alt="best8"></dt>
+                <dd>
+                  <strong class="product">더티 보디 스프레이</strong>
+                  <span class="price">￦41,500원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="best9">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best9.png" alt="best9"></dt>
+                <dd>
+                  <strong class="product">카마 콤바</strong>
+                  <span class="price">￦18,300원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="best10">
+            <a href="#">
+              <dl>
+                <dt><img src="../best_img/best10.png" alt="best10"></dt>
+                <dd>
+                  <strong class="product">띵크 핑크</strong>
+                  <span class="price">￦6,100원</span>
+                </dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+  		</div>
+      <div class="bestItem best1">
+        <div class="left">
+          <h3>1위</h3>
+          <a href="#"><img src="../best_img/best1_big.png" alt="best1"></a>
+        </div>
+        <div class="desc">
+            <p class="category">Face Masks</p>
+            <a href="#"><p class="kor">코스메틱 워리어</p></a>
+            <a href="#"><p class="eng">COSMETIC WARRIOR</p></a>
+        </div>
+        <div class="buy">
+          <select>
+            <option>용량</option>
+            <option value="75">75g</option>
+            <option value="150">150g</option>
+          </select>
+          <div class="inner_area">
+            <p class="area"><a href="#"><span class="btn minus">-</span></a></p>
+            <p class="area"><input type="text" value="1" title="구매수량"></p>
+            <p class="area"><a href="#"><span class="btn plus">+</span></a></p>
+          </div>
+          <div class="price"><strong class="money">28,000</strong><span class="won">원</span></div>
+          <button class="order">주문하기</button>
+        </div>
+        <div class="other">
+          <span>다른 고객이 함께 구매한 상품</span>
+          <dl>
+            <dt><img src="../best_img/best9.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best11.jpg" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best12.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best13.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="bestItem best2">
+        <div class="left">
+          <h3>2위</h3>
+          <a href="#"><img src="../best_img/best2_big.png" alt="best2"></a>
+        </div>
+        <div class="desc">
+            <p class="category">Facial Soap</p>
+            <a href="#"><p class="kor">콜페이스</p></a>
+            <a href="#"><p class="eng">COALFACE</p></a>
+        </div>
+        <div class="buy">
+          <select>
+            <option>용량</option>
+            <option value="100">100g</option>
+          </select>
+          <div class="inner_area">
+            <p class="area"><a href="#"><span class="btn minus">-</span></a></p>
+            <p class="area"><input type="text" value="1" title="구매수량"></p>
+            <p class="area"><a href="#"><span class="btn plus">+</span></a></p>
+          </div>
+          <div class="price"><strong class="money">16,200</strong><span class="won">원</span></div>
+          <button class="order">주문하기</button>
+        </div>
+        <div class="other">
+          <span>다른 고객이 함께 구매한 상품</span>
+          <dl>
+            <dt><img src="../best_img/best9.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best11.jpg" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best12.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best13.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+        </div>
+
+      </div>
+      <div class="bestItem best3">
+        <div class="left">
+          <h3>2위</h3>
+          <a href="#"><img src="../best_img/best3_big.png" alt="best3"></a>
+        </div>
+        <div class="desc">
+            <p class="category">Face Masks</p>
+            <a href="#"><p class="kor">마스크 오브 매그너민티</p></a>
+            <a href="#"><p class="eng">MASK OF MEGNAMINTY</p></a>
+        </div>
+        <div class="buy">
+          <select>
+            <option>용량</option>
+            <option value="125">125g</option>
+            <option value="315">315g</option>
+          </select>
+          <div class="inner_area">
+            <p class="area"><a href="#"><span class="btn minus">-</span></a></p>
+            <p class="area"><input type="text" value="1" title="구매수량"></p>
+            <p class="area"><a href="#"><span class="btn plus">+</span></a></p>
+          </div>
+          <div class="price"><strong class="money">20,700</strong><span class="won">원</span></div>
+          <button class="order">주문하기</button>
+        </div>
+        <div class="other">
+          <span>다른 고객이 함께 구매한 상품</span>
+          <dl>
+            <dt><img src="../best_img/best9.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best11.jpg" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best12.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><img src="../best_img/best13.png" alt="풀 오브 그레이스"></dt>
+            <dd>
+              <strong class="product">풀 오브 그레이스</strong>
+              <span class="price">￦26,300원</span>
+            </dd>
+          </dl>
+        </div>
+
+      </div>
+    </div>
+	</section>
+	<!--    header-->
+    <? include "../include/sub_footer.html" ?>
+    <!--   // header-->
+</body>
+</html>

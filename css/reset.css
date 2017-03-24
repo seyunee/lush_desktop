@@ -1,0 +1,18 @@
+/* common 공통요소 */
+*{margin:0;padding:0;}
+ul,ol,li{list-style:none}
+img{border:0;vertical-align:bottom}
+body{font-size:12px;color:#333;line-height:1.5;}
+.hidden{position: absolute;left: -1000%;top:0;width:1px;height: 1px;overflow: hidden;color: #fff;}
+a:link,a:visited{text-decoration:none;color:#333}
+a:hover,a:active{text-decoration:none;color:#333}
+address{font-style:normal}
+fieldset{border:none}
+header,aside,nav,menu,section,footer,article{display:block;}
+/*iPhone 폰트사이즈 고정*/
+-webkit-text-size-adjust:none;
+
+/*skipNav*/
+#skipNav{position:relative;width:100%;overflow:hidden;z-index: 1000;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px;overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:12px;}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{display:block;height:auto;padding:5px 0; background:none repeat scroll 0 0 #f2f2f2;}

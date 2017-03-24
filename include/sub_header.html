@@ -1,0 +1,68 @@
+<div id="skipNav">
+    <a href="#contents">본문바로가기</a>
+    <a href="#nav">네비게이션바로가기</a>
+</div>
+<div id="wrap">
+	<header>
+		<div class="gnb">
+			<h1 class="logo"><a href="../index.php">LUSH</a></h1>
+			<nav id="nav">
+				<menu class="depth1">
+					<li>
+						<a href="../best/best_list.html">BEST</a>
+						<ul class="depth2">
+							<li><a href="../best/best_list.html">Weekly BEST</a></li>
+							<li><a href="#">Monthly BEST</a></li>
+							<li><a href="#">Steady Seller</a></li>
+						</ul>
+					</li>
+					<li>
+                        <a href="../bath/bath_list.html">Bath</a>
+						<ul class="depth2">
+							<li><a href="../bath/bath_list.html">Bath Bombs</a></li>
+							<li><a href="../bath/bath_list.html">Bubble Bars</a></li>
+							<li><a href="../bath/bath_list.html">Luxury Bath Oils</a></li>
+							<li><a href="../bath/bath_list.html">Fun</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Shower</a>
+						<ul class="depth2">
+							<li><a href="#">Shower Gels & Jellies</a></li>
+							<li><a href="#">Smoothies & Conditioners</a></li>
+							<li><a href="#">Scrubs & Butters</a></li>
+							<li><a href="#">Fun</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Face</a>
+						<ul class="depth2">
+							<li><a href="#">Cleansers</a></li>
+							<li><a href="#">Toners</a></li>
+							<li><a href="#">Masks</a></li>
+						</ul>
+					</li>
+                    <li>
+						<a href="../stories/news_list.php">Stories</a>
+                        <ul class="depth2">
+                          <li><a href="../stories/news_list.php">NEWS</a></li>
+                          <li><a href="../stories/review_list.php">REVIEW</a></li>
+                          <li><a href="../stories/faq.html">FAQ</a></li>
+                        </ul>
+					</li>
+				</menu>
+			</nav>
+			<div class="util">
+				<a href="#" class="search">search</a>
+
+				<? if(!$s_email){
+				?>
+				<a href="../member/login.html" class="login">Log in</a>
+				<a href="../member/join.html" class="join">Join</a>
+				<?}else{?>
+				<a href="../member/logout.php" class="login">Log out</a>
+				<span class="user"><?=$s_fname?></span>
+				<?}?>
+			</div>
+		</div> <!-- //gnb -->
+	</header>

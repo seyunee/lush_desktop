@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>LUSH KOREA</title>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js "></script>
+  <script src="../lib/common.js"></script>
+  <script src="../lib/mainpopup.js"></script>
+  <link href="../css/lush.css" rel="stylesheet" type="text/css">
+	<script>
+        $(document).ready(function(){
+
+            $('.depth1 li a').on('mouseenter focus',function(){
+               $(this).parent('li').siblings().children('.depth2').removeClass('on');
+                $(this).parent('li').children('.depth2').addClass('on');
+            });
+
+            $('header').on('mouseleave',function(){
+                $('.depth2').removeClass('on');
+            });
+        });
+     </script>
+ </head>
+<body>
+<div id="wrap">
+	<header>
+		<div class="gnb">
+			<h1 class="logo"><a href="../index.html">LUSH</a></h1>
+			<nav id="nav">
+				<menu class="depth1">
+					<li>
+						<a href="../best/best_list.html">BEST</a>
+						<ul class="depth2">
+							<li><a href="../best/best_list.html">Weekly BEST</a></li>
+							<li><a href="#">Monthly BEST</a></li>
+							<li><a href="#">Steady Seller</a></li>
+						</ul>
+					</li>
+					<li>
+                        <a href="../bath/bath_list.html">Bath</a>
+						<ul class="depth2">
+							<li><a href="../bath/bath_list.html">Bath Bombs</a></li>
+							<li><a href="../bath/bath_list.html">Bubble Bars</a></li>
+							<li><a href="../bath/bath_list.html">Luxury Bath Oils</a></li>
+							<li><a href="../bath/bath_list.html">Fun</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Shower</a>
+						<ul class="depth2">
+							<li><a href="#">Shower Gels & Jellies</a></li>
+							<li><a href="#">Smoothies & Conditioners</a></li>
+							<li><a href="#">Scrubs & Butters</a></li>
+							<li><a href="#">Fun</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Face</a>
+						<ul class="depth2">
+							<li><a href="#">Cleansers</a></li>
+							<li><a href="#">Toners</a></li>
+							<li><a href="#">Masks</a></li>
+						</ul>
+					</li>
+                    <li>
+						<a href="../stories/news_list.html">Stories</a>
+                        <ul class="depth2">
+                          <li><a href="../stories/news_list.html">NEWS</a></li>
+                          <li><a href="../stories/faq.html">FAQ</a></li>
+                        </ul>
+					</li>
+				</menu>
+			</nav>
+			<div class="util">
+				<a href="#" class="search">search</a>
+				<a href="../member/login.html" class="login">Log in</a>
+				<a href="../member/join.html" class="join">Join</a>
+			</div>
+		</div> <!-- //gnb -->
+	</header>
+	<footer>
+		<div class="bot_info">
+			<img src="../img/bot_info.png">
+		</div>
+		<div class="bot_detail">
+			<h1 class="bot_logo"><a href="#">LUSH</a></h1>
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+			</ul>
+			<div class="bot_content">
+			<p>사이트 운영자:㈜러쉬코리아 / 대표이사:우미령</p>
+			<p>
+서울시 서초구 서초동 1321-6 서초동아타워 6층</p>
+			<p>
+사업자 등록번호:201-81-77964 / 통신판매업 신고번호:2012-서울서초-0647 / 개인정보관리책임자:우승용</p>
+			<p>
+고객센터:1644-2357(운영시간:09:00~18:00, 점심시간:11:50~13:00) / FAX:02-795-7516 / 문의메일:webmaster@lush.co.kr  </p>
+			<p>Copyright © LUSHKOREA co., Ltd. All rights reserved.</p>
+
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

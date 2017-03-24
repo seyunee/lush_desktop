@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<title>LUSH KOREA-View</title>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js "></script>
+	<script src="../lib/common.js"></script>
+	<link href="../css/lush.css" rel="stylesheet" type="text/css">
+
+  <script>
+  $(document).ready(function(){
+    $(".ques").on('click',function(){
+      $(this).siblings('.answer').slideToggle();
+      $(this).toggleClass('on');
+    })
+
+    $('.menu li').on('click',function(){
+      $(this).siblings().removeClass('on');
+      $(this).addClass('on');
+    })
+  })
+  </script>
+
+ </head>
+<body>
+    <!--    header-->
+    <? include "../include/sub_header.html" ?>
+    <!--   // header-->
+	<section class="faq">
+    <h2>FAQ</h2>
+    <div class="container">
+      <ul class="menu">
+        <li class="on"><a href="#"><span class="membership">icon</span>membership</a></li>
+        <li><a href="#"><span class="order">icon</span>order</a></li>
+        <li><a href="#"><span class="shipping">icon</span>shipping</a></li>
+        <li><a href="#"><span class="return">icon</span>return</a></li>
+      </ul>
+      <h3>membership</h3>
+      <div class="questions">
+        <dl>
+          <dt class="ques"><span class="ico_q">Q</span>홈페이지 멤버십 혜택</dt>
+          <dd class="answer">
+            러쉬의 소식 및 혜택 우선제공
+            이벤트 참여 및 1만원 이상 무료배송 혜택
+          </dd>
+        </dl>
+        <dl>
+          <dt class="ques"><span class="ico_q">Q</span>홈페이지 회원정보 수정</dt>
+          <dd class="answer">
+            회원 가입 후 개명, 연락처, 주소지 변경 등의 회원 정보 수정이 가능합니다.
+
+            회원 정보 수정은 개인정보 보호를 위하여 본인만 가능하며,
+
+            고객센터를 이용한 정보 수정은 되지 않는 점 양해 부탁 드립니다.
+
+
+            회원 정보 수정을 위해 비밀번호 확인 및 아이핀 / 휴대전화를 통한 본인인증 절차가 필요합니다.
+
+            본인 명의의 휴대폰, 아이핀이 없는 경우 ‘공공아이핀(www.g-pin.go.kr)’을 사용하시기 바랍니다.
+
+            *매장에서 등록된 개인 정보는 가까운 러쉬 매장을 방문하여, 본인 확인 후 정보 수정을 요청 바랍니다.
+          </dd>
+        </dl>
+        <dl>
+          <dt class="ques"><span class="ico_q">Q</span>홈페이지 회원 탈퇴</dt>
+          <dd class="answer">
+            러쉬 회원탈퇴는 마이페이지 '내 정보'에서 가능하며, 회원 본인이 직접 진행해야 합니다.
+
+            회원탈퇴 시 개인정보는 개인정보 보호 정책의 절차에 따라 삭제 되며,
+
+            회원 아이디로 활동한 내역은 자동 소멸됩니다.
+          </dd>
+        </dl>
+        <dl>
+          <dt class="ques"><span class="ico_q">Q</span>홈페이지 회원가입 안내</dt>
+          <dd class="answer">
+            러쉬 홈페이지는 14세 이상 내/외국인 모두 가입 가능합니다.
+
+            회원 가입을 위해서는 휴대폰, 또는 아이핀을 통한 본인 인증 과정이 필요하며,
+
+            본인 명의의 휴대폰, 아이핀이 없는 경우 ‘공공아이핀(www.g-pin.go.kr)’을 사용하시기 바랍니다.
+
+          </dd>
+        </dl>
+      </div>
+    </div>
+	</section>
+	<!--    footer-->
+    <? include "../include/sub_footer.html" ?>
+    <!--   // footer-->
+</body>
+</html>
